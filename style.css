@@ -1,0 +1,135 @@
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  color: #c2b5b0;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #33231e;
+  padding: 10px;
+}
+.nav-link {
+  color: #ded4d1;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 19px;
+}
+.nav-link:hover,
+.nav-link.active {
+  background-color: #a8928c;
+}
+.pages {
+  position: relative;
+  height: calc(100vh - 60px);
+  font-size: 17px;
+}
+.page {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.page.active {
+  left: 0;
+  opacity: 1;
+}
+.neiron {
+  float: left;
+  width: 319px;
+  height: 343px;
+  margin-left: 10px; 
+  padding: 40px;
+}
+.synaps {
+  float: right; 
+  width: 439px; 
+  height: 320px; 
+  margin-right: 15px;
+  padding: 25px;
+}
+.refl_duga {
+  width: auto;
+  height: auto;
+  float: left; 
+  padding: 25px; 
+}
+.spinM_stroenie {
+  float: left; 
+  width: 398px; 
+  height: 320px; 
+  margin-right: 15px;
+}
+.golovM_stroenie {
+  width: 399px; 
+  height: 264px; 
+  margin-left: 50px;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .pages {
+    font-size: 14px;
+  }
+  .neiron {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .synaps {
+    float: none; 
+    width: 100%; 
+    height: auto; 
+    padding: 5px;
+  }
+  .refl_duga {
+    max-width: 100%;
+    height: auto;
+    float: none;
+  }
+  irame {
+    width: 100%;
+    height: auto;
+  }
+  .spinM_stroenie {
+    float: none; 
+    width: 100%; 
+    height: auto;
+  }
+  .golovM_stroenie {
+    width: 100%; 
+    height: auto; 
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+</style>
